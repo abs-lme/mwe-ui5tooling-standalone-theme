@@ -1,0 +1,12 @@
+{
+  "name": "theme",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "ui5 build self-contained --clean-dest --include-task=replaceVersion",
+    "dev": "ui5 serve -p 8081",
+    "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.5.0"
+  }
+}

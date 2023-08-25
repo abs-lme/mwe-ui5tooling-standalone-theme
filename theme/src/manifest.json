@@ -1,0 +1,10 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "my.theme",
+    "type": "library",
+    "applicationVersion": {
+      "version": "${version}"
+    }
+  }
+}

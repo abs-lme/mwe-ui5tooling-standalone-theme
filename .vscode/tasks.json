@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "Build all"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/app"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Build app"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/theme"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Build theme"
+    }
+  ]
+}

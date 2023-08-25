@@ -1,0 +1,17 @@
+specVersion: "3.0"
+type: theme-library
+metadata:
+  name: my.theme
+framework:
+  name: SAPUI5
+  version: 1.104.2
+  libraries:
+    - name: sap.m
+      development: true
+    - name: sap.ui.core
+      development: true
+    - name: sap.ui.layout
+      development: true
+    - name: sap.ui.unified
+      development: true
+    - name: themelib_sap_fiori_3

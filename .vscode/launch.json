@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Serve app",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev", "--", "--accept-remote-connections"],
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/app",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "Serve theme",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev", "--", "--accept-remote-connections"],
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/theme",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Serve all",
+      "configurations": ["Serve app", "Serve theme"]
+    }
+  ]
+}
